@@ -1,9 +1,14 @@
 # UEFI Hello World
 A simple template for creating a UEFI application, which prints "Hello, world!" onto the screen.
 
-# Compiling
+# Compiling gnu-efi
+Before you can start compiling your UEFI application, you need to compile gnu-efi.
 ```
 make
+```
+
+# Compiling the UEFI application
+```
 make bootloader
 ```
 
