@@ -15,6 +15,6 @@ make bootloader
 # Running on real hardware
 To run your UEFI application on real hardware create an "efi" folder on a USB stick, and in that folder create a "boot" folder.
 
-Then copy x86_64/bootloader/main.efi to your USB to efi/boot/bootx64.efi.
+Then copy x86_64/bootloader/main.efi to your USB to efi/boot/bootx64.efi
 
 Then, reboot the computer and boot from the USB.
