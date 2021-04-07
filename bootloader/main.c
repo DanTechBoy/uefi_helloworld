@@ -8,7 +8,7 @@ EFI_STATUS efi_main (EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable) {
 
 	Print(L"Hello, world! \n\r"); // Prints "Hello, world!" to the screen
 
-	while ((ST->ConIn->ReadKeyStroke(ST->ConIn, &Key)) == EFI_NOT_READY); // Loops until a key is pressed
+	while ((SystemTable->ConIn->ReadKeyStroke(SystemTable->ConIn, &Key)) == EFI_NOT_READY); // Loops until a key is pressed
 
 	return EFI_SUCCESS; // Exits the UEFI application
 }
